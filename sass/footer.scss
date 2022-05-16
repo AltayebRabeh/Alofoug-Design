@@ -1,0 +1,17 @@
+footer {
+    background-color: $mainBgColor;
+    color: $mainFontColor;
+    a {
+        color: $mainFontColor;
+        text-decoration: none;
+        &:hover {
+            color: $secondBgColor;
+        }
+    }
+    .copyright {
+        a {
+            color: $secondBgColor;
+        }
+        font-size: 14px;
+    }
+}

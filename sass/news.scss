@@ -1,0 +1,25 @@
+.news {
+    .card {
+        height: 320px;
+        cursor: pointer;
+        transition: all .5s linear;
+        .image-box {
+            overflow: hidden;
+            max-height: 200px;
+            min-height: 200px;
+        }
+        .image {
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            transition: all .5s linear;
+        }
+        &:hover {
+            background-color: $mainBgColor;
+            color: $mainFontColor;
+            .image {
+                transform: rotate(2deg) scale(1.2);
+            }
+        }
+    }
+}

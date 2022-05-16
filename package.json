@@ -1,0 +1,15 @@
+{
+    "name": "alofoug-desaign",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:sass": "node-sass sass/*.scss css/style.css -style expanded",
+        "watch:sass": "node-sass -w sass/style.scss css/style.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    }
+}

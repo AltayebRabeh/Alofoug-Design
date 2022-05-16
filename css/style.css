@@ -1,0 +1,249 @@
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+.main-title {
+  position: relative; }
+  .main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    height: 3px;
+    width: 61px;
+    background-color: #fdc632; }
+
+.secound-title {
+  position: relative; }
+  .secound-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    height: 3px;
+    width: 61px;
+    background-color: #6699FF; }
+
+.btn {
+  background-color: transparent;
+  border-color: #6699FF;
+  color: #6699FF; }
+  .btn:hover {
+    background-color: #6699FF;
+    border-color: #6699FF;
+    color: #FFF; }
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6699FF;
+  border: 1px solid #FFF;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 5px;
+  cursor: pointer; }
+  .popup:hover {
+    background-color: #fdc632; }
+
+.top-bar .logo img {
+  max-width: 300px; }
+
+.top-bar marquee {
+  margin: 0 20px;
+  border-width: 0 3px;
+  border-style: solid;
+  border-color: #6699FF; }
+  @media (max-width: 991px) {
+    .top-bar marquee {
+      border-left: 0;
+      margin-left: 0; } }
+
+.top-bar .search a {
+  background-color: transparent;
+  border: none; }
+  .top-bar .search a:hover,
+  .top-bar .search a :active,
+  .top-bar .search a :focus {
+    color: #fdc632;
+    outline: none;
+    box-shadow: none; }
+
+.top-bar .social-media a {
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .15s linear; }
+  .top-bar .social-media a i {
+    color: #6699FF;
+    transition: all .15s linear;
+    font-size: 20px; }
+  .top-bar .social-media a:hover {
+    transform: scale(1.2); }
+    .top-bar .social-media a:hover i {
+      color: #fdc632; }
+
+.navbar {
+  background-color: #6699FF;
+  padding-top: 0;
+  padding-bottom: 0; }
+  @media (min-width: 992px) {
+    .navbar {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1020; } }
+  .navbar .container {
+    display: flex; }
+  .navbar .navbar-brand img {
+    max-width: 300px; }
+  .navbar .navbar-toggler {
+    height: 27px;
+    width: 27px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around; }
+    @media (max-width: 991px) {
+      .navbar .navbar-toggler {
+        display: flex; } }
+    .navbar .navbar-toggler:focus {
+      box-shadow: none; }
+    .navbar .navbar-toggler span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #FFF;
+      transition: all .15s linear; }
+    .navbar .navbar-toggler.open span:nth-of-type(1) {
+      transform: rotate(50deg) translate(8px); }
+    .navbar .navbar-toggler.open span:nth-of-type(2) {
+      display: none; }
+    .navbar .navbar-toggler.open span:nth-of-type(3) {
+      transform: rotate(-50deg) translate(8px); }
+  .navbar .navbar-nav .nav-item {
+    position: relative; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      color: #FFF;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      white-space: nowrap;
+      transition: all .15s linear; }
+      @media (max-width: 991px) {
+        .navbar .navbar-nav .nav-item .nav-link {
+          padding-top: 5px;
+          padding-bottom: 5px; } }
+    .navbar .navbar-nav .nav-item:hover .nav-link {
+      color: #fdc632; }
+    @media (min-width: 992px) {
+      .navbar .navbar-nav .nav-item:first-of-type .nav-link {
+        padding-left: 0; }
+      .navbar .navbar-nav .nav-item:last-of-type .nav-link {
+        padding-right: 0; } }
+    @media (max-width: 991px) {
+      .navbar .navbar-nav .nav-item::after {
+        display: none; } }
+    .navbar .navbar-nav .nav-item:hover {
+      color: #fdc632; }
+    .navbar .navbar-nav .nav-item::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 0;
+      background-color: #fdc632;
+      transition: all .15s linear; }
+    .navbar .navbar-nav .nav-item:hover::after {
+      width: 100%; }
+  .navbar .navbar-nav .dropdown .dropdown-menu {
+    top: 100%;
+    border-radius: 0;
+    border: none;
+    margin-top: 0;
+    background-color: #6699FF;
+    padding-top: 2px;
+    padding-bottom: 0; }
+    .navbar .navbar-nav .dropdown .dropdown-menu li:not(:last-of-type) {
+      border-bottom: 1px solid #FFF; }
+    .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+      color: #FFF;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      transition: all .15s linear; }
+      .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+        background-color: #fdc632 !important; }
+    @media (min-width: 992px) {
+      .navbar .navbar-nav .dropdown .dropdown-menu::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        height: 3px;
+        width: 100%;
+        background-color: #fdc632;
+        transition: all .15s linear; } }
+  .navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; }
+
+.news .card {
+  height: 320px;
+  cursor: pointer;
+  transition: all .5s linear; }
+  .news .card .image-box {
+    overflow: hidden;
+    max-height: 200px;
+    min-height: 200px; }
+  .news .card .image {
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: all .5s linear; }
+  .news .card:hover {
+    background-color: #6699FF;
+    color: #FFF; }
+    .news .card:hover .image {
+      transform: rotate(2deg) scale(1.2); }
+
+.statistics {
+  background-color: #6699FF;
+  color: #FFF; }
+  .statistics .box {
+    font-size: 20px; }
+    .statistics .box span {
+      width: 150px;
+      height: 150px;
+      font-size: 22px;
+      font-weight: bold;
+      border: 3px solid #FFF;
+      border-radius: 50%; }
+
+.contact-us form input,
+.contact-us form textarea {
+  width: 100%;
+  outline: none;
+  border-color: #6699FF;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding: 5px 0; }
+  .contact-us form input::placeholder,
+  .contact-us form textarea::placeholder {
+    color: #6699FF; }
+
+.contact-us .box {
+  min-height: 50px;
+  border-left: 1px solid #6699FF; }
+  .contact-us .box span {
+    font-size: 14px; }
+
+footer {
+  background-color: #6699FF;
+  color: #FFF; }
+  footer a {
+    color: #FFF;
+    text-decoration: none; }
+    footer a:hover {
+      color: #fdc632; }
+  footer .copyright {
+    font-size: 14px; }
+    footer .copyright a {
+      color: #fdc632; }

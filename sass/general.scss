@@ -1,0 +1,56 @@
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-title {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        height: 3px;
+        width: 61px;
+        background-color: $secondBgColor;
+    }
+}
+
+.secound-title {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        height: 3px;
+        width: 61px;
+        background-color: $mainBgColor;
+    }
+}
+
+.btn {
+    background-color: transparent;
+    border-color: $mainBgColor;
+    color: $mainBgColor;
+    &:hover {
+        background-color: $mainBgColor;
+        border-color: $mainBgColor;
+        color: $mainFontColor;
+    }
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $mainBgColor;
+    border: 1px solid $mainFontColor;
+    font-size: 18px;
+    color: $mainFontColor;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: $secondBgColor;
+    }
+}
