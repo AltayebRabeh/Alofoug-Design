@@ -74,9 +74,6 @@
         justify-content: space-around;
         background-color: transparent;
         border: none;
-        @media (max-width: 991px) {
-            display: flex;
-        }
         &:focus {
             box-shadow: none;
         }
@@ -86,6 +83,7 @@
             height: 2px;
             background-color: $mainFontColor;
             transition: all .15s linear;
+            margin-bottom: 5px;
         }
         &.open {
             span {
