@@ -221,13 +221,21 @@ body {
 .contact-us form textarea {
   width: 100%;
   outline: none;
-  border-color: #6699FF;
+  border-color: #333333;
   border-style: solid;
   border-width: 0 0 1px 0;
-  padding: 5px 0; }
+  padding: 5px 0;
+  transition: all .3s linear; }
   .contact-us form input::placeholder,
   .contact-us form textarea::placeholder {
-    color: #6699FF; }
+    transition: all .3s linear;
+    color: #333333; }
+  .contact-us form input:focus,
+  .contact-us form textarea:focus {
+    border-color: #6699FF; }
+    .contact-us form input:focus::placeholder,
+    .contact-us form textarea:focus::placeholder {
+      color: #6699FF; }
 
 .contact-us .box {
   min-height: 50px;
