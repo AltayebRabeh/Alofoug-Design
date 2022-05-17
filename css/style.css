@@ -103,9 +103,6 @@ body {
     padding: 0;
     flex-direction: column;
     justify-content: space-around; }
-    @media (max-width: 991px) {
-      .navbar .navbar-toggler {
-        display: flex; } }
     .navbar .navbar-toggler:focus {
       box-shadow: none; }
     .navbar .navbar-toggler span {
