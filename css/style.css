@@ -59,15 +59,17 @@ body {
       border-left: 0;
       margin-left: 0; } }
 
-.top-bar .search a {
-  background-color: transparent;
-  border: none; }
-  .top-bar .search a:hover,
-  .top-bar .search a :active,
-  .top-bar .search a :focus {
-    color: #fdc632;
-    outline: none;
-    box-shadow: none; }
+.top-bar .search {
+  margin-right: 20px; }
+  .top-bar .search a {
+    background-color: transparent;
+    border: none; }
+    .top-bar .search a:hover,
+    .top-bar .search a :active,
+    .top-bar .search a :focus {
+      color: #fdc632;
+      outline: none;
+      box-shadow: none; }
 
 .top-bar .social-media a {
   margin-left: 5px;
