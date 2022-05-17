@@ -105,6 +105,9 @@ body {
     justify-content: space-around;
     background-color: transparent;
     border: none; }
+    @media (max-width: 991px) {
+      .navbar .navbar-toggler {
+        display: flex; } }
     .navbar .navbar-toggler:focus {
       box-shadow: none; }
     .navbar .navbar-toggler span {

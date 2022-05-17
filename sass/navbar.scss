@@ -74,6 +74,9 @@
         justify-content: space-around;
         background-color: transparent;
         border: none;
+        @media (max-width: 991px) {
+            display: flex;
+        }
         &:focus {
             box-shadow: none;
         }
