@@ -70,9 +70,6 @@
         height: 27px;
         width: 27px;
         padding: 0;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: transparent;
         border: none;
         &:focus {
             box-shadow: none;
@@ -83,7 +80,8 @@
             height: 2px;
             background-color: $mainFontColor;
             transition: all .15s linear;
-            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 10px;
         }
         &.open {
             span {

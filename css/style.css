@@ -101,9 +101,6 @@ body {
     height: 27px;
     width: 27px;
     padding: 0;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: transparent;
     border: none; }
     .navbar .navbar-toggler:focus {
       box-shadow: none; }
@@ -113,7 +110,8 @@ body {
       height: 2px;
       background-color: #FFF;
       transition: all .15s linear;
-      margin-bottom: 5px; }
+      display: block;
+      margin-bottom: 10px; }
     .navbar .navbar-toggler.open span:nth-of-type(1) {
       transform: rotate(50deg) translate(8px); }
     .navbar .navbar-toggler.open span:nth-of-type(2) {
