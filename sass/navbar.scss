@@ -72,6 +72,8 @@
         padding: 0;
         flex-direction: column;
         justify-content: space-around;
+        background-color: transparent;
+        border: none;
         &:focus {
             box-shadow: none;
         }
