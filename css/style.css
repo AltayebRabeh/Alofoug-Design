@@ -1,6 +1,8 @@
-body {
-  overflow-x: hidden;
+html {
   scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden; }
 
 .main-title {
   position: relative; }
