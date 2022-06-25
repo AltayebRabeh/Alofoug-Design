@@ -161,8 +161,10 @@
                 padding-top: 2px;
                 padding-bottom: 0;
                 li {
-                    &:not(:last-of-type) {
-                        border-bottom: 1px solid $mainFontColor;
+                    @media (min-width: 992px) {
+                        &:not(:last-of-type) {
+                            border-bottom: 1px solid $mainFontColor;
+                        }
                     }
                 }
                 .dropdown-item {

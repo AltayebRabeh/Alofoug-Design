@@ -32,6 +32,22 @@ body {
     }
 }
 
+.center-title {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        height: 3px;
+        width: 61px;
+        transform: translateX(-50%);
+        background-color: $mainBgColor;
+    }
+}
+
 .btn {
     background-color: transparent;
     border-color: $mainBgColor;

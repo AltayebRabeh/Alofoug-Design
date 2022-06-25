@@ -1,0 +1,10 @@
+.e_learning {
+    a {
+        text-decoration: none;
+        color: $mainBgColor;
+        transition: all .3s linear;
+        &:hover {
+            color: $secondBgColor;
+        }
+    }
+}
